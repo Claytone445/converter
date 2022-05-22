@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is current courses page</h1>
+    <h1>Список текущих валют</h1>
     <AllCurrency/>
   </div>
 </template>

@@ -44,7 +44,7 @@ ul {
   padding: 0;
 }
 li {
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 a {
   color: #42b983;
