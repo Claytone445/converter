@@ -1,17 +1,12 @@
 
 <template>
-  <div class="hello">
+  <div class="converter">
     <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <label for="rubQauntity">Рубли </label>
+    <p> Enter currency bellow </p>
+    <label for="rubQauntity"> usd in rub </label>
     <input name="rubQauntity" id="rubQauntity" type="text" v-model.number="rub">
-    <label for="usdQauntity">Доллары </label>
-    <input name="rubQauntity" id="usdbQauntity" type="text" v-model.number="convert">
-    <h3>usd in rub {{usd}} </h3>
+    <label for="usdQauntity"> rub </label>
+    <input name="usdQauntity" id="usdbQauntity" type="text" v-model.number="convert">
 
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <MainConverter msg="I'm component"/>
+    <MainConverter msg="Конвертер валют"/>
   </div>
 </template>
 
