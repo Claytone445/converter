@@ -37,7 +37,7 @@ export default {
 li {
   padding: 3px;
   list-style-type: none;
-  text-decoration: underline;
+  text-decoration: none;
   color: black;
   cursor: pointer;
 }

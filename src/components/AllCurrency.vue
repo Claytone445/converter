@@ -1,10 +1,15 @@
 
 <template>
   <div class="currency ">
-    <h1></h1>
+    <h2>Выберите базовую валюту для конвертации</h2>
+    <select multiple="multiple" v-model="selected">
+      <option v-for="value in usd" v-bind:key="value.Name">
+        {{ value.Name}}
+      </option>
+    </select>
     <ul id="v-for-object" class="list">
-      <li v-for="value in usd" v-bind:key="value">
-        {{ value.Name}}: {{ value.Value.toFixed(2)}} - рублей.
+      <li v-for="value in usd" v-bind:key="value.Name">
+        {{ value.Name}}: {{ value.Value.toFixed(2)}} - {{ selected[0] }}.
       </li>
     </ul>
   </div>
@@ -16,6 +21,7 @@ export default {
   data() {
     return {
       usd: "",
+      selected: []
     }
   },
   created() {
