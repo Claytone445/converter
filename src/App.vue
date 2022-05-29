@@ -1,14 +1,15 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Converter</router-link> |
-      <router-link to="/CurrentCourses">Current Courses</router-link>
+      <router-link to="/">{{ $t('main.convert') }}</router-link> |
+      <router-link to="/CurrentCourses">{{$t ('main.currentCourses')}}</router-link>
     </nav>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -4,7 +4,7 @@
     <h1></h1>
     <ul id="v-for-object" class="list">
       <li v-for="value in usd" v-bind:key="value">
-        {{ value.Name}}: {{ value.Value}} - рублей.
+        {{ value.Name}}: {{ value.Value.toFixed(2)}} - рублей.
       </li>
     </ul>
   </div>

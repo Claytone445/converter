@@ -1,0 +1,10 @@
+{
+  "main": {
+    "switcher": "Language switcher:",
+    "rub": "rub",
+    "usdToRub": "usd in rub",
+    "convert": "Currency converter",
+    "currentCourses": "Current courses",
+    "enterAmount": "Enter currency below"
+  }
+}
