@@ -3,13 +3,13 @@
   <div class="currency ">
     <h2>Выберите базовую валюту для конвертации</h2>
     <select multiple="multiple" v-model="selected">
-      <option v-for="value in usd" v-bind:key="value.Name">
-        {{ value.Name}}
+      <option v-for="value in rub" v-bind:key="value.Name">
+        {{ value.Name}} {{ value.Value}}
       </option>
     </select>
     <ul id="v-for-object" class="list">
-      <li v-for="value in usd" v-bind:key="value.Name">
-        {{ value.Name}}: {{ value.Value.toFixed(2)}} - {{ selected[0] }}.
+      <li v-for="value in rub" v-bind:key="value.Name">
+        {{ value.Name}}: {{ value.Value.toFixed(2)}} рублей или {{selected[0]}}
       </li>
     </ul>
   </div>
@@ -20,15 +20,15 @@ export default {
   name: 'AllCurrency',
   data() {
     return {
-      usd: "",
+      rub: "",
       selected: []
     }
   },
   created() {
     this.axios
         .get(`https://www.cbr-xml-daily.ru/daily_json.js`)
-        .then(response => (this.usd = response.data.Valute));
-  }
+        .then(response => (this.rub = response.data.Valute));
+  },
 }
 </script>
 
