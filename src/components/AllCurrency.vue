@@ -3,13 +3,14 @@
   <div class="currency ">
     <h2>Выберите базовую валюту для конвертации</h2>
     <select multiple="multiple" v-model="selected">
-      <option v-for="value in rub" v-bind:key="value.Name">
+      <option v-for="value in rub" v-bind:key="value.Name" v-bind:value="{ name: value.Name, number: value.Value }">
         {{ value.Name}} {{ value.Value}}
       </option>
     </select>
     <ul id="v-for-object" class="list">
-      <li v-for="value in rub" v-bind:key="value.Name">
-        {{ value.Name}}: {{ value.Value.toFixed(2)}} рублей или {{selected[0]}}
+      <li v-for="value in rub" v-bind:key="value.Name" >
+        {{ value.Name}}: {{ value.Value.toFixed(2)}} рублей или
+        <span v-if="selected.length > 0"> {{  (value.Value / selected[0].number).toFixed(2) }} {{selected[0].name}}</span>
       </li>
     </ul>
   </div>
@@ -21,7 +22,7 @@ export default {
   data() {
     return {
       rub: "",
-      selected: []
+      selected: [],
     }
   },
   created() {
