@@ -1,8 +1,8 @@
 
 <template>
-  <div class="currency ">
-    <h2>Выберите базовую валюту для конвертации</h2>
-    <select multiple="multiple" v-model="selected">
+  <div class="currency">
+    <h2 class="d-flex justify-center">Выберите базовую валюту для конвертации</h2>
+    <select multiple="multiple" v-model="selected" class="">
       <option v-for="value in rub" v-bind:key="value.Name" v-bind:value="{ name: value.Name, number: value.Value }">
         {{ value.Name}}
       </option>

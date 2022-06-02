@@ -1,6 +1,6 @@
 
 <template>
-  <div>
+  <div class="d-flex justify-center flex-column">
   <div class="converter">
     <h1>{{ $t('main.convert') }}</h1>
     <p>{{ $t('main.enterAmount') }}</p>
@@ -8,11 +8,11 @@
     <input name="rubQauntity" id="rubQauntity" type="text" v-model.number="rub">
     <label for="usdQauntity"> {{ $t('main.rub') }} </label>
     <input name="usdQauntity" id="usdbQauntity" type="text" v-model.number="convert">
+  </div>
 
-  </div>
-  <div class="switcher">
+
     <locale-switcher/>
-  </div>
+
   </div>
 </template>
 
@@ -50,7 +50,7 @@ ul {
   padding: 0;
 }
 li {
-  display: inline-block;
+  display: flex;
   margin: 0 10px;
 }
 a {

@@ -1,6 +1,5 @@
 <template>
-  <div class="about">
-    <h1>Список текущих валют</h1>
+  <div class="about d-flex justify-center ">
     <AllCurrency/>
   </div>
 </template>

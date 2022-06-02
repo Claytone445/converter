@@ -1,6 +1,6 @@
 <template>
-  <div class="switcher">
-<ul>
+  <div class="switcher d-flex ma-4">
+<ul class="d-flex ">
   <p>{{ $t('main.switcher') }} </p>
   <li v-for="locale in locales" :key="locale" @click="switchLocale(locale)">
     {{locale}}

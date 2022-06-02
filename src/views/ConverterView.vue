@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home d-flex justify-center">
     <MainConverter msg="Конвертер валют"/>
   </div>
 </template>
