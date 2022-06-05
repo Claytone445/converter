@@ -1,12 +1,15 @@
 <template>
-  <div class="switcher d-flex ma-4">
+  <v-container class="d-flex ma-4">
 <ul class="d-flex ">
-  <p>{{ $t('main.switcher') }} </p>
-  <li v-for="locale in locales" :key="locale" @click="switchLocale(locale)">
-    {{locale}}
+  <p class="">{{ $t('main.switcher') }} </p> <li
+    v-for="locale in locales"
+    :key="locale"
+    @click="switchLocale(locale)"
+    class="pl-2">
+    <v-btn x-small>{{locale}}</v-btn>
   </li>
 </ul>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -28,14 +31,7 @@ export default {
 </script>
 
 <style scoped>
-.switcher ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 li {
-  padding: 3px;
   list-style-type: none;
   text-decoration: none;
   color: black;

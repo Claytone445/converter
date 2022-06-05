@@ -1,19 +1,19 @@
 
 <template>
-  <div class="d-flex justify-center flex-column">
+  <v-container class="d-flex justify-center">
   <div class="converter">
     <h1>{{ $t('main.convert') }}</h1>
     <p>{{ $t('main.enterAmount') }}</p>
-    <label for="rubQauntity"> {{ $t('main.usdToRub', {rub: 'rub'}) }} </label>
-    <input name="rubQauntity" id="rubQauntity" type="text" v-model.number="rub">
-    <label for="usdQauntity"> {{ $t('main.rub') }} </label>
-    <input name="usdQauntity" id="usdbQauntity" type="text" v-model.number="convert">
-  </div>
 
+    <label for="rubQauntity"> {{ $t('main.usdToRub', {rub: 'rub'}) }} </label>
+    <v-text-field name="rubQauntity" id="rubQauntity" type="number" v-model.number="rub"></v-text-field>
+
+
+    <v-text-field name="usdQauntity" id="usdbQauntity" type="number" v-model.number="convert"></v-text-field>
 
     <locale-switcher/>
-
   </div>
+  </v-container>
 </template>
 
 <script>
@@ -42,18 +42,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: flex;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>

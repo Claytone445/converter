@@ -2,9 +2,9 @@
   "main": {
     "switcher": "Language switcher:",
     "rub": "rub",
-    "usdToRub": "usd in rub",
+    "usdToRub": "Usd in rub:",
     "convert": "Currency converter",
     "currentCourses": "Current courses",
-    "enterAmount": "Enter currency below"
+    "enterAmount": "Enter currency below:"
   }
 }
