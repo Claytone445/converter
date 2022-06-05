@@ -3,7 +3,7 @@
   <v-container class="d-flex justify-center">
     <div>
     <h2 class="justify-center ma-2">Выберите базовую валюту для конвертации</h2>
-    <select multiple="multiple" v-model="selected" class="ma-2 justify-center select">
+    <select multiple="multiple" v-model="selected" class="ma-2 justify-center select" size="3">
       <option v-for="value in rub" :key="value.Name" :value="{ name: value.Name, number: value.Value }">
         {{ value.Name}}
       </option>
