@@ -6,10 +6,10 @@
         color="yellow"
         class="d-flex justify-center"
         >
-          <v-btn rounded class="me-2 text-capitalize menu">
+          <v-btn  rounded small class="me-2 text-capitalize menu">
         <router-link to="/">{{ $t('main.convert') }}</router-link>
           </v-btn>
-          <v-btn rounded class="me-2 text-capitalize menu">
+          <v-btn  rounded small class="me-2 text-capitalize menu">
         <router-link to="/CurrentCourses">{{$t ('main.currentCourses')}}</router-link>
           </v-btn>
         </v-app-bar>
